@@ -7,11 +7,71 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+library()
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+## Goods Issued 
+
+Ini adalah data goods issued periode 2015-2021.
+
+### Goods Issued 2015
+
+```{r}
+mat_2015 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQCTgFAgvVTFQDvTRtFdjPCtucUgaS5X7uJAVGyfNT9AcGTTmoLlI4SqL9gnUo2ywArtSO7r-_6Bm92/pub?gid=710055579&single=true&output=csv")
+View(head(mat_2015))
+```
+
+### Goods Issued 2016
+```{r}
+mat_2016 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSzuP1M1Jx3zICvoZ8y9U53Yn2DsG1F6rVBUu7SH3LNNk6vO1suY47ggRVaGibNhN9N6FYYTC5kdOGa/pub?gid=127244205&single=true&output=csv")
+View(head(mat_2016))
+```
+### Goods Issued 2017
+```{r}
+mat_2017 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRz27tyeBdeU-oarxtuWpXnD_7YlKeOqMYVxG8S94KYdks7smli2Gjo4pihBIKmuUiEnquheMx7mtY/pub?gid=1994313430&single=true&output=csv")
+View(head(mat_2017))
+```
+### Goods Issued 2018
+```{r}
+mat_2018 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS-LNjXvoshzR3AWN_rl3giyf0m0p8fNyBf_WzQQwv0mANOdhM8_LB9AdURmvmOHf-itss2aYg5cZHh/pub?gid=887637440&single=true&output=csv")
+View(head(mat_2018))
+```
+### Goods Issued 2019
+```{r}
+mat_2019 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSCZWMM_Ipd2DoFHGhDbEjhjkVpt8F-RrDWbI3Lor8vIB7yrqj-D1u0qa7F3PkW76fCfT6cY4CECZiK/pub?gid=0&single=true&output=csv")
+View(head(mat_2019))
+```
+### Goods Issued 2020
+```{r}
+mat_2020 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1NUFcrX84R_UkAspk9h7GeF9aqXCO8VSI7ihnUGvwwR9uyLrgosvV7NEmPPU9kq14t8pgrhyi-nv/pub?gid=0&single=true&output=csv")
+View(head(mat_2020))
+```
+### Goods Issued 2021
+```{r}
+mat_2021 <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSxTl7qhTSxQ5jI-mW5BJv9r2CmZ3MpW2-w4ijJS9gi6ETaJYr5YgR-3eyHrMti5nTetrMbUekXuBVx/pub?gid=0&single=true&output=csv")
+View(head(mat_2021))
+```
+
+### Save File CSV
+
+```{r}
+write.csv(mat_2015, "iw3m_2015.csv")
+write.csv(mat_2016, "iw3m_2016.csv")
+write.csv(mat_2017, "iw3m_2017.csv")
+write.csv(mat_2018, "iw3m_2018.csv")
+write.csv(mat_2019, "iw3m_2019.csv")
+write.csv(mat_2020, "iw3m_2020.csv")
+write.csv(mat_2021, "iw3m_2021.csv")
+```
+
+
+
+
+
+
 
 ```{r cars}
 summary(cars)
